@@ -1,18 +1,18 @@
-import java.util.*;
-public class Main{
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-     public static void main(String []args){
-       Scanner sc = new Scanner(System.in);
-       int N = sc.nextInt();
-       int X = sc.nextInt();
-       int[] A = new int[N];
-       for(int i=0; i<N; i++){
-           A[i] = sc.nextInt();
-       }
-       for(int i=0; i<N; i++){
-           if(A[i]<X){
-               System.out.print(A[i]+ " ");
-           }
-       }
-     }
+        int n = sc.nextInt();
+        int x = sc.nextInt();
+        StringBuilder str = new StringBuilder();
+
+        for(int i=0; i<n; i++) {
+            int a = sc.nextInt();
+            if(a<x)
+                str.append(a).append(" ");
+        }
+
+        System.out.println(str);
+    }
 }
