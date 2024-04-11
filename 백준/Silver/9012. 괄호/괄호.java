@@ -5,9 +5,8 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
-        
+        Stack <Character> st = new Stack <>();
         for(int i=0; i<t; i++) {
-        	Stack <Character> st = new Stack <>();
         	String s = sc.next();
         	char arr[] = new char[s.length()];
         	
@@ -31,7 +30,7 @@ public class Main {
         		System.out.println("YES");
         	else
         		System.out.println("NO");
-        	
+        	st.clear();
         }
     }
 }
